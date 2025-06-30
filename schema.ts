@@ -15,6 +15,6 @@ export const typeDefs = `#graphql
 
   type Query {
     getCharacter(id: ID!): Character!
-    getCharacters(ids: [ID!]!): [Character]
+    getCharacters(ids: [ID!]): [Character]
   }
 `;
