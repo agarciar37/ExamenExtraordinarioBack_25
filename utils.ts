@@ -7,7 +7,7 @@ export const getCharacterData = async (id: string): Promise<Character> => {
 
   const data = await response.json();
 
-  const character = data[0]; // La API devuelve un array con un solo personaje
+  const character = data[0]; 
   if (!character || !character.name) throw new Error("Invalid character data");
 
   return character;
