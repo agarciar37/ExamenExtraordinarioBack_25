@@ -4,11 +4,10 @@ export type Character = {
   alternate_names: string[];
   species: string;
   gender: string;
-  house: House | null;
+  house: House | null | string;
 };
- 
+
 export type House = {
   name: string;
   characters: Character[];
 };
- 
